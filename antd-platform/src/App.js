@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import { Button } from 'antd';
+import {Layout } from 'antd';
 import './App.css';
+const { Header, Footer, Sider, Content } = Layout;
+
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Button type="primary">按钮</Button>
+      <div>
+          <Layout>
+            <Header>Header</Header>
+            <Content>Content</Content>
+            <Footer>Footer</Footer>
+          </Layout>
       </div>
     );
   }
